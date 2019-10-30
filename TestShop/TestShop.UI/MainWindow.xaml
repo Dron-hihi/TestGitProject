@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:TestShop.UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="5">
+        <StackPanel>
+            <ListBox>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="10" Padding="20" Background="Blue">
+                            <StackPanel>
+                                <TextBlock Text="{Binding Name}"></TextBlock>
+                                <TextBlock Text="{Binding Price}"></TextBlock>
+                                <TextBlock Text="{Binding Category}"></TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
     </Grid>
 </Window>
