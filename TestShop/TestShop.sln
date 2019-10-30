@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestShop.UI", "TestShop.UI\TestShop.UI.csproj", "{6CD31C62-029C-4ABA-ABA2-46DF12462945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestShop.DAL", "TestShop.DAL\TestShop.DAL.csproj", "{84D01790-20E3-4534-8E43-8E45C882DDEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CD31C62-029C-4ABA-ABA2-46DF12462945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD31C62-029C-4ABA-ABA2-46DF12462945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD31C62-029C-4ABA-ABA2-46DF12462945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD31C62-029C-4ABA-ABA2-46DF12462945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D01790-20E3-4534-8E43-8E45C882DDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D01790-20E3-4534-8E43-8E45C882DDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D01790-20E3-4534-8E43-8E45C882DDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D01790-20E3-4534-8E43-8E45C882DDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E137104C-7F67-4E3B-9CED-0CC40B14B97B}
+	EndGlobalSection
+EndGlobal
