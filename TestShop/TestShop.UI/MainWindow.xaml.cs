@@ -25,7 +25,9 @@ namespace TestShop.UI
         public MainWindow()
         {
             LP.Add(new ProductVM { Id = 1, Name = "Hreny", Price = 123, Category = "qwerty" });
+            LP.Add(new ProductVM { Id = 1, Name = "Bred", Price = 321, Category = "qwerty" });
             InitializeComponent();
+            LB_Main.ItemsSource = LP;
         }
         
     }

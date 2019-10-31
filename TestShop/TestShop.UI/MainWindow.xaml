@@ -8,14 +8,17 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="5">
         <StackPanel>
-            <ListBox>
+            <ListBox Name="LB_Main">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Border Margin="10" Padding="20" Background="Blue">
+                        <Border Margin="10" Padding="20" Background="Green">
                             <StackPanel>
-                                <TextBlock Text="{Binding Name}"></TextBlock>
-                                <TextBlock Text="{Binding Price}"></TextBlock>
-                                <TextBlock Text="{Binding Category}"></TextBlock>
+                                <TextBlock HorizontalAlignment="Stretch" Margin="3" Background="Aqua">Name</TextBlock>
+                                <TextBlock HorizontalAlignment="Stretch" Margin="3" Text="{Binding Name}"></TextBlock>
+                                <TextBlock HorizontalAlignment="Stretch" Margin="3" Background="Aqua">Price</TextBlock>
+                                <TextBlock HorizontalAlignment="Stretch" Margin="3" Text="{Binding Price}"></TextBlock>
+                                <TextBlock HorizontalAlignment="Stretch" Margin="3" Background="Aqua">Category</TextBlock>
+                                <TextBlock HorizontalAlignment="Stretch" Margin="3" Text="{Binding Category}"></TextBlock>
                             </StackPanel>
                         </Border>
                     </DataTemplate>
