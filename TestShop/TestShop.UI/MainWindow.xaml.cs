@@ -15,6 +15,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TestShop.DAL;
 using System.Threading;
+using System.Data.Common;
+
 
 namespace TestShop.UI
 {
@@ -34,7 +36,7 @@ namespace TestShop.UI
             this.Title = "Dimooooooon";
             appcon = new ApplicationContext();
             var prods = appcon.Products.ToList();
-            LP = prods.Select(x => new ProductVM { Id = x.Id, Name = x.Name + "D", Price = x.Price, Category = x.Category }).ToList();
+            LP = prods.Select(x => new ProductVM { Id = x.Id, Name = x.Name + "A", Price = x.Price, Category = x.Category }).ToList();
             LB_Main.ItemsSource = LP;
 
         }
