@@ -4,18 +4,13 @@ namespace TestShop.DAL
     using System.Data.Entity;
     using System.Linq;
 
-    public class Applicatoin : DbContext
+    public class ApplicationContext : DbContext
     {
-        
-        public Applicatoin()
+        public ApplicationContext()
             : base("name=Applicatoin")
         {
 
         }
         public DbSet<Product> Products { get; set; }
-
-      
     }
-
-  
 }

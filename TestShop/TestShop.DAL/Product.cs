@@ -9,8 +9,8 @@ namespace TestShop.DAL
     public class Product
     {
         public int Id { get; set; }
-        string Name { get; set; }
-        double Price { get; set; }
-        string Category { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public string Category { get; set; }
     }
 }
