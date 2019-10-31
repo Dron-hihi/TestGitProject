@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestShop.DAL;
 
 namespace TestShop.UI
 {
@@ -21,14 +23,19 @@ namespace TestShop.UI
     public partial class MainWindow : Window
     {
         public List<ProductVM> LP = new List<ProductVM>();
-        
+
+        public ApplicationContext appcon;
+
+
         public MainWindow()
         {
-            LP.Add(new ProductVM { Id = 1, Name = "Hreny", Price = 123, Category = "qwerty" });
-            LP.Add(new ProductVM { Id = 1, Name = "Bred", Price = 321, Category = "qwerty" });
             InitializeComponent();
+            appcon = new ApplicationContext();
+            var prods = appcon.Products.ToList();
+            LP = prods.Select(x => new ProductVM { Id = x.Id, Name = x.Name, Price = x.Price, Category = x.Category }).ToList();
             LB_Main.ItemsSource = LP;
+
         }
-        
+
     }
 }
